@@ -1,2 +1,6 @@
 config.js
 key.py
+.venv
+.DS_Store
+test.sql
+
