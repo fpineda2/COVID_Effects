@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Updates</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <!--DataTable needed files-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
+
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+
+</head>
+
+<body>
+
+
+    <nav>
+        <!--<label class="logo">Live Search Engine</label>-->
+        <ul>
+            <div class="active">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <!--<li><a href="\about">About</a></li>
+                     <li><a href="\search">Search</a></li>-->
+            </div>
+
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+    <section></section>
+
+    <div class="header-container">
+        <div class="wrapper">
+            <header>
+                <div class="hero-content">
+                    <div class="gap-40"></div>
+                    <h1>COVID-19 Updates</h1>
+                    <div class="gap-40"></div>
+                    <!--<p>
+                        Keep up with everything going on in the world in the current state
+                    </p>-->
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div id='startTable'>
+        <table id="stats" class="table">
+            <thead>
+                <tr>
+                    <th>Province</th>
+                    <th>Confirmed</th>
+                    <th>Deaths</th>
+                    <th>Case Fatality Rate</th>
+                    <th>Active Cases</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <!--<script> $('#startTable').hide(); </script>
+    <script>$('#startTable').show();</script>-->
+
+    <script src="dataTable.js" type="module"></script>
+
+    <div class="gap-40"></div>
+
+    <div class='tableauPlaceholder' id='viz1646558552195' style='position: relative'><object class='tableauViz'
+            style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='Mapwithcolor&#47;Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object></div>
+    <script type='text/javascript'>                    var divElement = document.getElementById('viz1646558552195'); var vizElement = divElement.getElementsByTagName('object')[0]; if (divElement.offsetWidth > 800) { vizElement.style.width = '1100px'; vizElement.style.height = '527px'; } else if (divElement.offsetWidth > 500) { vizElement.style.width = '1100px'; vizElement.style.height = '527px'; } else { vizElement.style.width = '100%'; vizElement.style.height = '727px'; } var scriptElement = document.createElement('script'); scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+    </script>
+
+</body>
+
+<div class="APIContainer">
+
+    <div id="top">
+        <!-- <p id="top"></p>-->
+    </div>
+</div>
+
+</html>

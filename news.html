@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Updates</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#icon').click(function () {
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <style>
+        span a {
+            text-align: center;
+            color: #4cdcf5;
+            /*margin-left:35.5rem !important;*/
+        }
+
+        span a.active,
+        a:hover {
+            border: none;
+            color: rgba(134, 32, 250, 0.774);
+        }
+    </style>
+
+
+
+    <nav>
+        <!--<label class="logo">Live Search Engine</label>-->
+        <ul>
+            <div class="active">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <!--<li><a href="\about">About</a></li>
+                         <li><a href="\search">Search</a></li>-->
+            </div>
+
+        </ul>
+        <!--<label id="icon">-->
+        <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+    <div class="APIContainer">
+
+        <div id="top">
+            <!-- <p id="top"></p>-->
+        </div>
+    </div>
+
+    <script src="news.js" type="module"></script>
+
+</body>
+
+</html>
