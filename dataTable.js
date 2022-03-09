@@ -1,4 +1,4 @@
-import {MY_API_KEY} from './config.js';
+/*import {MY_API_KEY} from './config.js';*/
 
 async function loTable(table){
 const tableHead = table.querySelector("thead");
@@ -10,7 +10,7 @@ const settings = {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com",
-		"x-rapidapi-key": MY_API_KEY
+		"x-rapidapi-key": process.env.MY_API_KEY
 	}
 };
 

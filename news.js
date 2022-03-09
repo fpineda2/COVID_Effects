@@ -1,11 +1,11 @@
-import {MY_API_KEY} from './config.js';
+/*import {MY_API_KEY} from './config.js';*/
 
 async function loadNews(){
 const response = await fetch("https://vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com/api/news/get-coronavirus-news/0", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "vaccovid-coronavirus-vaccine-and-treatment-tracker.p.rapidapi.com",
-		"x-rapidapi-key": MY_API_KEY
+		"x-rapidapi-key": process.env.MY_API_KEY
 	}
 })
 
